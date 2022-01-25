@@ -9,17 +9,17 @@ class List_Mean:
     def set_list(self, my_list):
         self.list = my_list
 
-    def calc_avg(self, my_list):
-        List_Mean.get_list(self)
+    def calc_avg(self):
+        new = List_Mean.get_list(self)
         new_list = []
         sum = 0
 
         # In this block of code I try to sort items out based on their type, numeric or not
-        for variable in my_list:
-            if type(my_list(variable)) == int or type(my_list(variable)) == float is True:
-                new_list.append(variable)
-            elif type(my_list(variable)) == int or type(my_list(variable)) == float is False:
-                new_list.pop(variable)
+        for variable in new:
+            if type(new[variable]) == int or type(new[variable]) == float is True:
+                new_list.append(new[variable])
+            elif type(new[variable]) == int or type(new[variable]) == float is False:
+                new_list.pop(new[variable])
 
         for item in new_list:
             sum += new_list[item]
