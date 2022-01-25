@@ -16,10 +16,8 @@ class List_Mean:
 
         # In this block of code I try to sort items out based on their type, numeric or not
         for variable in new:
-            if type(new[variable]) == int or type(new[variable]) == float is True:
+            if type(new[variable]) == int is True:
                 new_list.append(new[variable])
-            elif type(new[variable]) == int or type(new[variable]) == float is False:
-                new_list.pop(new[variable])
 
         for item in new_list:
             sum += new_list[item]
@@ -29,6 +27,8 @@ class List_Mean:
         print(mean)
 
 
+# Assigning value to the variable
 my_list = [1, 2, 3, 4, 5, 6, 7, "dog"]
 
+# Instantiating the variable
 list_1 = List_Mean(my_list)
