@@ -13,7 +13,7 @@ class List_Mean:
         List_Mean.get_list(self)
         new_list = []
         sum = 0
-        mean = 0
+
         # In this block of code I try to sort items out based on their type, numeric or not
         for variable in my_list:
             if type(my_list(variable)) == int or type(my_list(variable)) == float is True:
